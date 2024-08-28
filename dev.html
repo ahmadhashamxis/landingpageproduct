@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Document</title>
+    <style>
+        .gradient-background-btn {
+            background: linear-gradient(0deg, #301466 0%, #3E5FAA 123.73%);
+            
+        }
+        .gradient-background-cylinder{
+        background: linear-gradient(203deg, rgba(39, 36, 55, 0.80) 54.33%, rgba(28, 25, 41, 0.80) 83.04%)
+        }
+        .blob {
+            position: absolute;
+            width: 500px;
+            height: 500px;
+            border-radius: 20%;
+            background: linear-gradient(0deg, #301466 0%, #263b6d 123.73%);
+            filter: blur(250px);
+            z-index: -1;
+        }
+     
+    </style>
+</head>
+<body class="bg-black relative overflow-hidden">
+   
+    <div class="blob top-[-100px] left-0"></div>
+    
+   
+    <div class="blob right-0 bottom-0"></div>
+
+    <div class="flex justify-center mt-20 relative z-10">
+        <div class="w-2/5 mt-20 text-white">
+            <div class="gradient-background-cylinder px-5 gap-2 mb-2 flex justify-center items-center text-gray-300 text-sm py-1 w-[60%] rounded-full border-2 border-[#2D2938]">
+                <div class="bg-[#C6BEFF] w-2 h-2 rounded-full"></div>
+                <p>Build, Deploy & Inspect Quality in Minutes</p>
+                <div class="bg-[#C6BEFF] w-2 h-2 rounded-full"></div>
+            </div>
+            <h2 class="mb-4 text-5xl pb-2 font-bold w-[70%]">
+                Unlock the Power of AI Vision in 
+                <span class="font-normal">Manufacturing</span>
+            </h2>
+            <p class="text-left text-lg leading-10 opacity-75">
+                xis.ai's cutting-edge Computer Vision AI platform revolutionizes
+                the way you develop and deploy AI solutions. From ideation to
+                production, our seamless platform streamlines every step of the AI
+                lifecycle, empowering you to bring your vision to life with
+                unparalleled efficiency.
+            </p>
+            <button class="py-2 px-8 rounded-md mt-2 backdrop-blur-2xl border-[#5D38C2] border gradient-background-btn text-white">
+                Explore More
+                <span class="absolute ml-[100px] mt-[-35px] w-12 h-12 bg-white text-black rounded-full flex items-center justify-center">
+                    <i class="fas fa-arrow-right"></i>
+                </span>
+            </button>
+           
+        </div>
+     
+        <div class="w-1/2">
+            <img 
+            src="team.svg"
+            width="650px"
+            height="550px"
+            alt="">
+            <img src="training.svg" width="700px" height="550px" alt="" class="mt-[-450px] ml-20">
+        </div>
+    </div>
+</body>
+</html>
